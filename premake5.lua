@@ -15,6 +15,16 @@ project "ImPlot"
 		"implot_items.cpp"
 	}
 
+	includedirs
+	{
+	   "../imgui",
+	}
+
+	links
+	{
+		"ImGui"
+	}
+
 	filter "system:windows"
 		systemversion "latest"
 		cppdialect "C++17"
